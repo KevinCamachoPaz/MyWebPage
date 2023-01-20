@@ -220,9 +220,84 @@ input, select, textarea {
 		footer > p {
 			font-size: 1.25em;
 		}
+/*
+*
+* ToTop
+*/
+.ui-to-top {
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	z-index: 100;
+	width: 60px;
+	height: 60px;
+	font-size: 20px;
+	line-height: 56px;
+	color: #ffffff;
+	overflow: hidden;
+	background: #016187;
+	box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 75%);
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	transition: .45s all ease-in-out;
+	transform: translate3d(0, 100px, 0);
+}
+
+.ui-to-top:hover {
+	color: #ffffff;
+	background: #000000;
+	text-decoration: none;
+}
+
+.ui-to-top:focus {
+	color: #ffffff;
+}
+
+.ui-to-top.active {
+	transform: translate3d(0, 0, 0);
+}
+
+html.mobile .ui-to-top,
+html.tablet .ui-to-top {
+	display: none !important;
+}
+
+@media (min-width: 576px) {
+	.ui-to-top {
+		right: 40px;
+		bottom: 40px;
+	}
+}
+
+	.ui-to-top:hover {
+	color: #ffffff;
+	background: #000000;
+	text-decoration: none;
+}
+
+.ui-to-top:focus {
+	color: #ffffff;
+}
+
+.ui-to-top.active {
+	transform: translate3d(0, 0, 0);
+}
+
+html.mobile .ui-to-top,
+html.tablet .ui-to-top {
+	display: none !important;
+}
+
+@media (min-width: 576px) {
+	.ui-to-top {
+		right: 40px;
+		bottom: 40px;
+	}
+}
+
 
 /* Container */
-
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 50px);
@@ -1629,7 +1704,7 @@ input, select, textarea {
 
 		.image img {
 			display: block;
-			width: 100%;
+			width: 60%;
 		}
 
 		.image.fit {
@@ -2196,7 +2271,7 @@ input, select, textarea {
 		/* Wrappers */
 
 			.wrapper {
-				padding: 5em 0 5em 0;
+				padding: 2em 0 1em 0;
 				text-align: center;
 			}
 
