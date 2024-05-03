@@ -296,6 +296,30 @@ html.tablet .ui-to-top {
 	}
 }
 
+@media screen and (min-width: 600px) {
+	.box.style1 {
+		width: 300px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.box.style1 {
+		width: 300px;
+	}
+}
+ 
+@media screen and (min-width: 600px) {
+	.box.style2 {
+		width: 300px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.box.style2 {
+		width: 300px;
+	}
+}
+ 
 
 /* Container */
 	.container {
@@ -344,18 +368,32 @@ html.tablet .ui-to-top {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 800px) {
 
 			.container {
 				width: 100%;
-				max-width: calc(100% - 30px);
 			}
 
 				.container.medium {
-					width: 100%;
+					width: 756px;
 				}
 
 		}
+
+		@media screen and (max-width: 700px) {
+
+			.container {
+				width: 100%;
+			}
+
+				.container.medium {
+					width: 75%;
+				}
+
+		}
+
+
+
 
 /* Row */
 
@@ -1092,8 +1130,13 @@ html.tablet .ui-to-top {
 
 		@media screen and (max-width: 980px) {
 
+			.image.fit{
+				display: inline-grid;
+				align-items: center;
+			}
+
 			.row {
-				display: flex;
+				display: inline-grid;
 				flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
@@ -1703,29 +1746,29 @@ html.tablet .ui-to-top {
 	}
 
 		.image img {
-			display: block;
-			width: 60%;
+			display: inline-grid;
+			width: 100%;
 		}
 
 		.image.fit {
-			display: block;
+			display: inline-grid;
 			width: 100%;
 		}
 
 		.image.featured {
-			display: block;
+			display: inline-grid;
 			width: 100%;
-			margin: 0 0 2em 0;
+			margin: 0 0 0 0;
 		}
 
 		.image.left {
-			float: left;
+			display: flex;
 			margin: 0 2em 2em 0;
 		}
 
 		.image.centered {
-			display: block;
-			margin: 0 0 2em 0;
+			display: inline-grid;
+			margin: 0 0 0 0;
 		}
 
 			.image.centered img {
@@ -1733,17 +1776,13 @@ html.tablet .ui-to-top {
 				width: auto;
 			}
 
-/* Button */
+ /*Button */
 
 	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
 	button,
 	.button {
-		background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-		background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-		background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-		background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 		-moz-transition: background-color .2s ease-in-out;
 		-webkit-transition: background-color .2s ease-in-out;
 		-ms-transition: background-color .2s ease-in-out;
@@ -1986,6 +2025,7 @@ html.tablet .ui-to-top {
 /* Box */
 
 	.box {
+		display: block;
 		background: #fff;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
@@ -1996,16 +2036,21 @@ html.tablet .ui-to-top {
 			padding: 3em 2em 3.5em 2em;
 		}
 
-			.box.style1 h3 {
-				margin-bottom: 0.5em;
-			}
+		.box.style1 h3 {
+			margin-bottom: 0.5em;
+		}
+
+		.box.style2 {
+			padding: 3em 2em 3.5em 2em;
+			justify-content: center;
+		}
 
 		.box.style2 h3 {
 			margin-bottom: 0.25em;
 		}
 
 		.box.style2 .image {
-			position: relative;
+			position: absolute;
 			left: 2em;
 			top: 2em;
 			margin: -4em 0 4em -4em;
@@ -2306,7 +2351,8 @@ html.tablet .ui-to-top {
 			}
 
 				#top .image {
-					margin: 0 auto 2em auto;
+					margin: 0 auto auto auto;
+
 				}
 
 	}
@@ -2448,6 +2494,7 @@ html.tablet .ui-to-top {
 				}
 
 				.box.style2 {
+					align-items: center;
 					max-width: 32em;
 					margin-left: auto !important;
 					margin-right: auto !important;
