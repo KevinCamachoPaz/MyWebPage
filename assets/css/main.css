@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 @import url("fontawesome-all.min.css");
 
-/*
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -72,6 +66,7 @@ input, select, textarea {
 	appearance: none;
 }
 
+}
 /* Basic */
 
 	html {
@@ -220,6 +215,8 @@ input, select, textarea {
 		footer > p {
 			font-size: 1.25em;
 		}
+
+	.text
 /*
 *
 * ToTop
@@ -277,7 +274,7 @@ html.tablet .ui-to-top {
 }
 
 .ui-to-top:focus {
-	color: #ffffff;
+	color: rgb(255, 255, 255);
 }
 
 .ui-to-top.active {
@@ -296,7 +293,7 @@ html.tablet .ui-to-top {
 	}
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 300px) {
 	.box.style1 {
 		width: 300px;
 	}
@@ -308,7 +305,7 @@ html.tablet .ui-to-top {
 	}
 }
  
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 300px) {
 	.box.style2 {
 		width: 300px;
 	}
@@ -2042,15 +2039,14 @@ html.tablet .ui-to-top {
 
 		.box.style2 {
 			padding: 3em 2em 3.5em 2em;
-			justify-content: center;
 		}
 
 		.box.style2 h3 {
-			margin-bottom: 0.25em;
+			margin-bottom: 0.5em;
 		}
 
 		.box.style2 .image {
-			position: absolute;
+			position: initial;
 			left: 2em;
 			top: 2em;
 			margin: -4em 0 4em -4em;
