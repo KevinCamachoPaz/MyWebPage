@@ -66,7 +66,6 @@ input, select, textarea {
 	appearance: none;
 }
 
-}
 /* Basic */
 
 	html {
@@ -110,7 +109,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #43bff0 !important;
+			color: #016187 !important;
 		}
 
 		a img {
@@ -212,11 +211,10 @@ input, select, textarea {
 		margin: 3em 0 0 0;
 	}
 
-		footer > p {
-			font-size: 1.25em;
-		}
-
-	.text
+	footer > p {
+		font-size: 1.25em;
+	}
+		
 /*
 *
 * ToTop
@@ -1797,7 +1795,7 @@ html.tablet .ui-to-top {
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #43B3E0;
+		background-color: #016187;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
@@ -1808,7 +1806,7 @@ html.tablet .ui-to-top {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #43bff0;
+			background-color: #000000;
 			color: #fff !important;
 		}
 
@@ -1817,7 +1815,7 @@ html.tablet .ui-to-top {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #3BA8D3;
+			background-color: #0056b3;
 			top: 1px;
 		}
 
